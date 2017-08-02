@@ -8,15 +8,20 @@ namespace Travels.Master
 {
     static class Program
     {
+        public static Dictionary<string, Form> formContainer = new Dictionary<string, Form>();
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()
         {
+            RegisterMenus();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MainForm());
+        }
+        private static void RegisterMenus() {
+            formContainer.Add("TravelsMaster", new Vehicle());
         }
     }
 }

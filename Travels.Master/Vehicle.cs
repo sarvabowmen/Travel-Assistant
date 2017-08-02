@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Travels.Master
 {
-    public partial class Form1 : Form
+    public partial class Vehicle : Form
     {
-        public Form1()
+        public Vehicle()
         {
             InitializeComponent();
         }
